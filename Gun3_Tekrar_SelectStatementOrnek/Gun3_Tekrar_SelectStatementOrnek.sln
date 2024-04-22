@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gun3_Tekrar_SelectStatementOrnek", "Gun3_Tekrar_SelectStatementOrnek\Gun3_Tekrar_SelectStatementOrnek.csproj", "{C60E56DA-02E2-4D4B-89E9-4D4677913C4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C60E56DA-02E2-4D4B-89E9-4D4677913C4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C60E56DA-02E2-4D4B-89E9-4D4677913C4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C60E56DA-02E2-4D4B-89E9-4D4677913C4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C60E56DA-02E2-4D4B-89E9-4D4677913C4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5792BA9-00B6-4B5C-BDCC-78C52CCB26C1}
+	EndGlobalSection
+EndGlobal
