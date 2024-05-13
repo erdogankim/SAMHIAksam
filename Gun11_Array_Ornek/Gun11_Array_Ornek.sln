@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gun11_Array_Ornek", "Gun11_Array_Ornek\Gun11_Array_Ornek.csproj", "{42B0081D-8638-49FF-8920-6BD9E4B55E33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42B0081D-8638-49FF-8920-6BD9E4B55E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42B0081D-8638-49FF-8920-6BD9E4B55E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42B0081D-8638-49FF-8920-6BD9E4B55E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42B0081D-8638-49FF-8920-6BD9E4B55E33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEAFCC71-F924-4576-9AFD-24D5DA82A02B}
+	EndGlobalSection
+EndGlobal
