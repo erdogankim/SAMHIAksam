@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gun12_CokBoyutlu_Dagitik_DiziDegiskenler", "Gun12_CokBoyutlu_Dagitik_DiziDegiskenler\Gun12_CokBoyutlu_Dagitik_DiziDegiskenler.csproj", "{B46692F2-DEF3-4E69-8549-6D51D46A2574}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B46692F2-DEF3-4E69-8549-6D51D46A2574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46692F2-DEF3-4E69-8549-6D51D46A2574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46692F2-DEF3-4E69-8549-6D51D46A2574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46692F2-DEF3-4E69-8549-6D51D46A2574}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1022C905-82D6-4B7C-A380-406DD9BB673B}
+	EndGlobalSection
+EndGlobal
