@@ -56,9 +56,23 @@
 // Bu değer, herhangi bir tarihin tamamen sayısal olan long türündeki karşığılını verir. 
 
 
-DateTime dt = new DateTime(1986, 11, 22, 0, 35, 0);
-Console.WriteLine(dt);
-Console.WriteLine(dt.Ticks);
+//DateTime dt = new DateTime(1986, 11, 22, 0, 35, 0);
+//Console.WriteLine(dt);
+//Console.WriteLine(dt.Ticks);
 
 // Belirtilen örneğe göre, dışarıdan girilen 3 farklı tarihin ortalama tarihini 
 // hesaplayıp, ekrana tarih olarak yazan programı yazınız. 
+//DateTime dt3 = new DateTime()
+
+DateTime[] tarihler = new DateTime[3];
+long toplamTicks = 0;
+for (int i = 0; i < tarihler.Length; i++)
+{
+    tarihler[i] = Convert.ToDateTime(Console.ReadLine());
+    toplamTicks += tarihler[i].Ticks;
+}
+
+long ortalamaTicks = toplamTicks / 3;
+
+DateTime ortalamaTarih = new DateTime(ortalamaTicks);
+Console.WriteLine(ortalamaTarih);
