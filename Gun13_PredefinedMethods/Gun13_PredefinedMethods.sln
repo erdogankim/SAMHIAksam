@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gun13_PredefinedMethods", "Gun13_PredefinedMethods\Gun13_PredefinedMethods.csproj", "{287A2E57-4B74-4393-8048-6C518FBFA79F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{287A2E57-4B74-4393-8048-6C518FBFA79F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287A2E57-4B74-4393-8048-6C518FBFA79F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287A2E57-4B74-4393-8048-6C518FBFA79F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287A2E57-4B74-4393-8048-6C518FBFA79F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6EC1A89-89F7-4479-BCB9-87889AADA902}
+	EndGlobalSection
+EndGlobal
