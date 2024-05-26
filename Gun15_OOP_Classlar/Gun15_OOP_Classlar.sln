@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gun15_OOP_Classlar", "Gun15_OOP_Classlar\Gun15_OOP_Classlar.csproj", "{32DE8D77-C961-4826-BF1C-2E1BD97CF5EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gun15_OOP_ClassOrnek", "Gun15_OOP_ClassOrnek\Gun15_OOP_ClassOrnek.csproj", "{C1FC645D-9438-4E56-95D2-4D732F3A8EDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32DE8D77-C961-4826-BF1C-2E1BD97CF5EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32DE8D77-C961-4826-BF1C-2E1BD97CF5EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32DE8D77-C961-4826-BF1C-2E1BD97CF5EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32DE8D77-C961-4826-BF1C-2E1BD97CF5EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1FC645D-9438-4E56-95D2-4D732F3A8EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1FC645D-9438-4E56-95D2-4D732F3A8EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1FC645D-9438-4E56-95D2-4D732F3A8EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1FC645D-9438-4E56-95D2-4D732F3A8EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A027104E-0240-4B38-94B2-7F97D7598941}
+	EndGlobalSection
+EndGlobal
