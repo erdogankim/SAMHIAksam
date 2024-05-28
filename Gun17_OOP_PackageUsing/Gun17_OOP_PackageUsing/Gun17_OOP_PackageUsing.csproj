@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Gun17_OOP_Package">
+      <HintPath>..\..\Gun17_OOP_Package\Gun17_OOP_Package\bin\Debug\net8.0\Gun17_OOP_Package.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
