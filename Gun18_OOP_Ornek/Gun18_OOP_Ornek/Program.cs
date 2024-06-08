@@ -7,7 +7,17 @@
 // Fiziksel dosya yoluna yeni bir dosya oluştursun. 
 
 // YeniOlustur("c:\Projects\benimyenidosya.txt");
+///////////////////////////////////////////////////////////////////////
 
+
+// Soru2
+// dosyaoperasyon calss ının içerisine
+// KlasorGetir adında bir method oluşturun. 
+// Method parametre olarak string türünde DosyaYolu alsın. 
+// geriye strin[] olarak, belirtilen dosya yolundaki bütün dosyaların listesini döndürsün. 
+
+// Tüyo : System.IO kütüphanesinin içinde Directory.GetFiles(yol) şeklinde çalışan 
+// bir method bulunmakta. 
 
 using Gun18_OOP_Ornek;
 
@@ -20,6 +30,8 @@ internal class Program
 
         DosyaOperasyon operasyon = new DosyaOperasyon();
         operasyon.YeniOlustur(yol);
+
+        
 
         Console.WriteLine("Dosya oluşturuldu.");
     }
