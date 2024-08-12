@@ -1,0 +1,65 @@
+﻿@page "/category"
+@using Gun23_BlazorOrnek.Entities
+@using Microsoft.Data.SqlClient
+<h3>Category</h3>
+
+@if (entities == null)
+{
+    <span>Veriler yükleniyor lütfen bekleyiniz.</span>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>CategoryID</th>
+                <th>CategoryName</th>
+                <th>Description</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in entities)
+            {
+                <tr>
+                    <td>@item.CategoryID</td>
+                    <td>@item.CategoryName</td>
+                    <td>@item.Description</td>
+                    <td><NavLink href="@($"category/detay/{item.CategoryID}")">Detay</NavLink>  </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    public List<CategoryEntity> entities;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        entities = new List<CategoryEntity>();
+
+        SqlConnection cnn = new SqlConnection("Data Source=.; Initial Catalog=Northwind; User Id=sa; Password=1; TrustServerCertificate=true");
+        cnn.Open();
+
+        SqlCommand cmd = new SqlCommand();
+        cmd.Connection = cnn;
+        cmd.CommandText = "Select * From Categories";
+
+        SqlDataReader rdr = cmd.ExecuteReader();
+        while (rdr.Read())
+        {
+            CategoryEntity c = new CategoryEntity();
+            c.CategoryID = Convert.ToInt32(rdr["CategoryID"]);
+            c.CategoryName = rdr["CategoryName"].ToString();
+            c.Description = rdr["Description"].ToString();
+
+            entities.Add(c);
+        }
+    }
+
+    
+
+}

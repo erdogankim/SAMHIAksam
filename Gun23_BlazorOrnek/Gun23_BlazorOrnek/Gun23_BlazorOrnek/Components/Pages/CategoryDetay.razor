@@ -1,0 +1,59 @@
+﻿@page "/category/detay/{Id:int}"
+@using Gun23_BlazorOrnek.Entities
+@using Microsoft.Data.SqlClient
+
+<h3>Category Detay</h3>
+
+<section>
+    <form>
+        <div class="form-group">
+            <label for="categoryID">Category ID:</label>
+            <input type="text" class="form-control" id="categoryID" @bind-value="Entity.CategoryID">
+        </div>
+
+        <div class="form-group">
+            <label for="categoryName">Category Name:</label>
+            <input type="text" class="form-control" id="categoryName" @bind-value="Entity.CategoryName">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" class="form-control" id="description" @bind-value="Entity.Description">
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Kaydet</button>
+    </form>
+</section>
+
+
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    public CategoryEntity Entity { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Entity = new CategoryEntity();
+
+        SqlConnection cnn = new SqlConnection("Data Source=.; Initial Catalog=Northwind; User Id=sa; Password=1; TrustServerCertificate=true");
+        cnn.Open();
+
+        SqlCommand cmd = new SqlCommand();
+        cmd.Connection = cnn;
+        cmd.CommandText = "Select * From Categories Where CategoryID = " + Id;
+
+        SqlDataReader rdr = cmd.ExecuteReader();
+
+        if (rdr.Read())
+        {
+            Entity.CategoryID = Convert.ToInt32(rdr["CategoryID"]);
+            Entity.CategoryName = rdr["CategoryName"].ToString();
+            Entity.Description = rdr["Description"].ToString();
+
+        }
+
+
+    }
+}
