@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gun24_Blazor_Ornek", "Gun24_Blazor_Ornek\Gun24_Blazor_Ornek\Gun24_Blazor_Ornek.csproj", "{EA738ADE-4EF1-4DDE-9E8F-12CDF76431AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gun24_Blazor_Ornek.Client", "Gun24_Blazor_Ornek\Gun24_Blazor_Ornek.Client\Gun24_Blazor_Ornek.Client.csproj", "{81840D15-575E-4DC5-ADB1-4479CDE98D30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA738ADE-4EF1-4DDE-9E8F-12CDF76431AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA738ADE-4EF1-4DDE-9E8F-12CDF76431AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA738ADE-4EF1-4DDE-9E8F-12CDF76431AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA738ADE-4EF1-4DDE-9E8F-12CDF76431AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81840D15-575E-4DC5-ADB1-4479CDE98D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81840D15-575E-4DC5-ADB1-4479CDE98D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81840D15-575E-4DC5-ADB1-4479CDE98D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81840D15-575E-4DC5-ADB1-4479CDE98D30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4D28B3A-4766-4DEE-B1DB-AA5AC7C0E0EA}
+	EndGlobalSection
+EndGlobal

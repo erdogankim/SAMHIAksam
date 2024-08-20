@@ -1,0 +1,18 @@
+﻿@page "/"
+@using Gun24_Blazor_Ornek.Entities
+
+<PageTitle>Home </PageTitle>
+<span>@ToplamKayit</span>
+
+<RadzenButton Click="@ButtonClicked" Text="Hi"></RadzenButton>
+@code {
+    public int? ToplamKayit = 0;
+
+    void ButtonClicked()
+    {
+        NorthwindDbContext dbContext = new NorthwindDbContext();
+        ToplamKayit = dbContext.Employees.Count();
+
+
+    }
+} 

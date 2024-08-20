@@ -1,0 +1,41 @@
+﻿@page "/category"
+@using Gun25_Ornek.Data
+
+<h3>Kategoriler</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Kategori ID</th>
+            <th>Adı</th>
+            <th>Açıklama</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in categories)
+        {
+            <tr>
+                <td>@item.CategoryID</td>
+                <td>@item.CategoryName</td>
+                <td>@item.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+@code {
+    // Verileri barındıracak olan liste
+    List<Category> categories = new List<Category>();
+
+    // Sayfa yüklendiğinde çalışacak olan method
+    protected override async Task OnInitializedAsync()
+    {
+        // Veritabanı işlemlerimi halledecek olan context nesne
+        NorthwindContext context = new NorthwindContext();
+
+        // Veritabanından bütün kayıtları getir ve listeye aktar
+        categories = context.Categories.ToList();
+
+    }
+}

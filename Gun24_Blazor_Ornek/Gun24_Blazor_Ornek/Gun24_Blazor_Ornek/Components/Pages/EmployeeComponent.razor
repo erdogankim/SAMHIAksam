@@ -1,0 +1,35 @@
+﻿@page "/employee"
+@using Gun24_Blazor_Ornek.Entities
+
+
+<RadzenDataGrid @ref=grid AllowFiltering="true" AllowColumnResize="true"
+                FilterMode="FilterMode.Simple" PageSize="5" AllowPaging="true" AllowSorting="true" Data="@employees" ColumnWidth="300px"
+                FilterCaseSensitivity="@filterCaseSensitivity" LogicalFilterOperator="@logicalFilterOperator">
+    <Columns>
+        <RadzenDataGridColumn Property="@nameof(Employee.EmployeeID)" Filterable="false" Title="ID" Frozen="true" Width="80px" TextAlign="TextAlign.Center" />
+        <RadzenDataGridColumn Property="FirstName" Title="First Name" />
+        <RadzenDataGridColumn Property="LastName" Title="Last Name" Width="150px" />
+        <RadzenDataGridColumn Property="BirthDate" Title="Birth Date" FormatString="{0:d}" />
+        <RadzenDataGridColumn Property="@nameof(Employee.Country)" Title="Country" />
+        <RadzenDataGridColumn Property="Notes" Title="Notes" />
+    </Columns>
+</RadzenDataGrid>
+
+@code {
+    RadzenDataGrid<Employee> grid;
+
+    LogicalFilterOperator logicalFilterOperator = LogicalFilterOperator.And;
+    FilterCaseSensitivity filterCaseSensitivity = FilterCaseSensitivity.CaseInsensitive;
+
+    IEnumerable<Employee> employees;
+
+    protected override async Task OnInitializedAsync()
+    {
+        NorthwindDbContext dbContext = new NorthwindDbContext();
+
+        
+
+        employees = dbContext.Employees;
+        await base.OnInitializedAsync();
+    }
+}
