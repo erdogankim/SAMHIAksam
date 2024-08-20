@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World with jQuery</title>
+    <!-- jQuery kütüphanesini ekleyin -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Sayfa yüklendiğinde çalışacak kod
+            $.ajax({
+                url:"https://jsonplaceholder.typicode.com/posts",
+                method:"GET",
+                success:function(data){
+                    console.log(data);
+                    $("#message").html(data[0].title);
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1 id="message">Mesaj buraya gelecek</h1>
+</body>
+</html>

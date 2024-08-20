@@ -1,0 +1,6 @@
+@Gun26_Api_Ornek_HostAddress = http://localhost:5110
+
+GET {{Gun26_Api_Ornek_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
