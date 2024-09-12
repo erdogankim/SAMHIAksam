@@ -1,20 +1,23 @@
 ﻿@using Gun29_MVC_Ornek.Data
 @model Category
 
-<form>
+<form method="post" action="/Category/Edit">
     <div class="form-group">
         <label for="txtCategoryID">Kategori ID</label>
-        <input type="text" class="form-control" id="txtCategoryID" placeholder="CategoryID" value="@Model.CategoryID">
+        <input type="text" class="form-control" id="txtCategoryID" placeholder="CategoryID"
+        value="@Model.CategoryID" name="CategoryID">
         
     </div>
     <div class="form-group">
         <label for="txtCategoryName">Kategori Adı</label>
-        <input type="text" class="form-control" id="txtCategoryName" placeholder="CategoryName" value="@Model.CategoryName">
+        <input type="text" class="form-control" id="txtCategoryName"
+        placeholder="CategoryName" value="@Model.CategoryName" name="CategoryName">
 
     </div>
     <div class="form-group">
         <label for="txtCategoryDescription">Kategori Açıklama</label>
-        <input type="text" class="form-control" id="txtCategoryDescription" placeholder="Description" value="@Model.Description">
+        <input type="text" class="form-control" id="txtCategoryDescription"
+        placeholder="Description" value="@Model.Description" name="Description">
 
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
