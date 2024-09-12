@@ -1,0 +1,21 @@
+﻿@using Gun29_MVC_Ornek.Data
+@model List<Category>
+<table class="table">
+    <thead>
+        <tr>
+            <td>Kategori ID</td>
+            <td>Kategori Adı</td>
+            <td>Açıklama</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CategoryID</td>
+                <td>@item.CategoryName</td>
+                <td>@item.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>

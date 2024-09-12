@@ -1,0 +1,21 @@
+﻿@using Gun29_MVC_Ornek.Data
+@model Category
+
+<form>
+    <div class="form-group">
+        <label for="txtCategoryID">Kategori ID</label>
+        <input type="text" class="form-control" id="txtCategoryID" placeholder="CategoryID" value="@Model.CategoryID">
+        
+    </div>
+    <div class="form-group">
+        <label for="txtCategoryName">Kategori Adı</label>
+        <input type="text" class="form-control" id="txtCategoryName" placeholder="CategoryName" value="@Model.CategoryName">
+
+    </div>
+    <div class="form-group">
+        <label for="txtCategoryDescription">Kategori Açıklama</label>
+        <input type="text" class="form-control" id="txtCategoryDescription" placeholder="Description" value="@Model.Description">
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
