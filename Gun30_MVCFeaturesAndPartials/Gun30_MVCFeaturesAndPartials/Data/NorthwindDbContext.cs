@@ -6,7 +6,7 @@ namespace Gun30_MVCFeaturesAndPartials.Data
     {
         public NorthwindDbContext(DbContextOptions options) : base(options)
         {
-            
+
         }
 
         public DbSet<Category> Categories { get; set; }
