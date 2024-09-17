@@ -1,7 +1,15 @@
+using Gun30_MVCFeaturesAndPartials.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<NorthwindDbContext>(opt =>
+{
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("NorthwindConnection"));
+});
 
 var app = builder.Build();
 
