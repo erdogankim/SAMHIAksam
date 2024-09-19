@@ -1,0 +1,47 @@
+﻿@model List<Category>
+
+
+<h1>Kategoriler</h1>
+<br />
+<div class="row">
+    <div class="col">
+        <a class="btn btn-success" asp-controller="Category" 
+        asp-action="Add">Ekle</a>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Kategori Id</th>
+                    <th>Adı</th>
+                    <th>Açıklama</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var category in Model)
+                {
+                    <tr>
+                        <td>@category.CategoryID</td>
+                        <td>@category.CategoryName</td>
+                        <td>@category.Description</td>
+                        <td>
+                            <a class="btn btn-warning" 
+                            asp-controller="Category"
+                            asp-action="Edit">Düzenle</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-danger"
+                               asp-controller="Category"
+                               asp-action="Delete">Sil</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
